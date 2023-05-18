@@ -13,7 +13,9 @@ public class Clientes {
 
     public String nome = "", endereco = "", CPF, RG = "";
     //public double telefone = 0, CPF = 0, RG = 0;
-    public double telefone = 0;
+    public double telefone = 0,
+
+    Scanner objScanner = new Scanner(System.in);
 
     public void cadastroClientes() {
 
@@ -23,25 +25,23 @@ public class Clientes {
         System.out.println("# SOLICITAREMOS ALGUNS DADOS !          #");
         System.out.println("#                                       #");
         System.out.println("#########################################");
-        
-        Scanner teclado = new Scanner(System.in);
 
         System.out.println("Informe seu nome completo");
-        nome = teclado.nextLine();
+        nome = objScanner.nextLine();
 
         System.out.println("Informe seu CPF: ");
-        CPF = teclado.nextLine();
+        CPF = objScanner.nextLine();
 
         System.out.println("Informe seu RG: ");
-        RG = teclado.nextLine();
+        RG = objScanner.nextLine();
 
         System.out.println("Informe seu Telefone: ");
-        telefone = teclado.nextInt();
+        telefone = objScanner.nextInt();
 
         System.out.println("Informe seu Endereco: ");
-        endereco = teclado.nextLine();
+        endereco = objScanner.nextLine();
 
-        if ("".equals(nome) || "".equals(CPF) || "".equals(RG) || "".equals(endereco) || "".equals(telefone)) {
+        if ("".equals(nome) || "".equals(CPF) || "".equals(RG) || "".equals(endereco) || "".equals(telefone) ) {
 
             System.out.println("Preencha todos os dados");
 
@@ -51,6 +51,9 @@ public class Clientes {
 
         }
     }
+
+
+
 
     public void listarClientes() {
 

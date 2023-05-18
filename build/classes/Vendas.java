@@ -8,9 +8,5 @@
  * @author Vitor de Jesus ❣🚀❣
  */
 public class Vendas {
-
-    public void newVenda() {
-        System.out.println("Vendas.newVenda()");
-    }
-
+    
 }
