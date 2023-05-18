@@ -24,6 +24,10 @@ public class Agencia {
         
         if (compra.equals("Sim")){
             System.out.println("*** Deseja Comprar um Carro ! ***");
+            
+            //Instância novo Objeto Clientes
+            Clientes objCliente = new Clientes();
+            objCliente.cadastro();    
         }
         else {
             System.out.println("*** Não Deseja Comprar um Carro ! ***");

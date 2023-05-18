@@ -9,6 +9,7 @@
  */
 public class Veiculos {
     
+    public String modelo, marca, ano, combustivel, cambio, direcao, freios;
     
     
 }
