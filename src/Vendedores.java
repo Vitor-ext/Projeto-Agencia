@@ -18,12 +18,12 @@ public class Vendedores {
 
     public void cadastroVendedores() {
 
-        System.out.println("######### É BOM TER VOCÊ AQUI  ##########");
-        System.out.println("#                                       #");
-        System.out.println("# AQUI REALIZAREMOS SEU CADASTRO !!     #");
-        System.out.println("# SOLICITAREMOS ALGUNS DADOS !          #");
-        System.out.println("#                                       #");
-        System.out.println("#########################################");
+        System.out.println("########### É BOM TER VOCÊ AQUI  ############");
+        System.out.println("#                                           #");
+        System.out.println("# AQUI REALIZAREMOS O CADASTRO DO VENDEDOR! #");
+        System.out.println("#       SOLICITAREMOS ALGUNS DADOS !        #");
+        System.out.println("#                                           #");
+        System.out.println("#############################################");
         
         Scanner teclado = new Scanner(System.in);
 

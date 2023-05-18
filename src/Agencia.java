@@ -32,37 +32,86 @@ public class Agencia {
 
         }
 
-        if (opcao == 1) {
-            System.out.println("*** Deseja Comprar um Carro ! ***");
+        // Validações com Switch - Case
+        switch (opcao) {
 
-            //Instância novo Objeto Vendas
-            Vendas objVendas = new Vendas();
-            objVendas.newVenda();
+            case 1:
 
-        } else if (opcao == 2) {
-            System.out.println("*** Deseja Cadastrar um Cliente ! ***");
+                System.out.println("*** Deseja Comprar um Carro ! ***");
 
-            //Instância novo Objeto Clientes
-            Clientes objCliente = new Clientes();
-            objCliente.cadastroClientes();
+                //Instância novo Objeto Vendas
+                Vendas objVendas = new Vendas();
+                objVendas.newVenda();
 
-        } else if (opcao == 3) {
-            System.out.println("*** Deseja Cadastrar um Vendedor ! ***");
+                break;
 
-            //Instância novo Objeto Clientes
-            Clientes objCliente = new Clientes();
-            objCliente.cadastroClientes();
+            case 2:
 
-        } else if (opcao == 4) {
-            System.out.println("*** Deseja Cadastrar um Veiculo ! ***");
+                System.out.println("*** Deseja Cadastrar um Cliente ! ***");
 
-            //Instância novo Objeto Veiculos
-            Veiculos objVeiculos = new Veiculos();
-            objVeiculos.cadastroVeiculos();
+                //Instância novo Objeto Clientes
+                Clientes objCliente = new Clientes();
+                objCliente.cadastroClientes();
 
-        } else {
-            System.out.println("*** Escolha um opção Válida ! ***");
+                break;
+
+            case 3:
+                System.out.println("*** Deseja Cadastrar um Vendedor ! ***");
+
+                //Instância novo Objeto Vendedores
+                Vendedores objVendedores = new Vendedores();
+                objVendedores.cadastroVendedores();
+
+                break;
+
+            case 4:
+                System.out.println("*** Deseja Cadastrar um Veiculo ! ***");
+                
+
+                //Instância novo Objeto Veiculos
+                Veiculos objVeiculos = new Veiculos();
+                objVeiculos.cadastroVeiculos();
+
+                break;
+
+            default:
+
+                System.out.println("*** Escolha um opção Válida ! ***");
+
         }
+
+        // Validações com IF e ELSE
+//        if (opcao == 1) {
+//            System.out.println("*** Deseja Comprar um Carro ! ***");
+//            
+//            //Instância novo Objeto Vendas
+//            Vendas objVendas = new Vendas();
+//            objVendas.newVenda();
+//
+//        } else if (opcao == 2) {
+//            System.out.println("*** Deseja Cadastrar um Cliente ! ***");
+// 
+//            //Instância novo Objeto Clientes
+//            Clientes objCliente = new Clientes();
+//            objCliente.cadastroClientes();  
+//            
+//        } else if (opcao == 3) {
+//            System.out.println("*** Deseja Cadastrar um Vendedor ! ***");
+//            
+                //Instância novo Objeto Vendedores
+//                Vendedores objVendedores = new Vendedores();
+//                objVendedores.cadastroVendedores();
+//            
+//        } else if (opcao == 4) {
+//            System.out.println("*** Deseja Cadastrar um Veiculo ! ***");
+//            
+//            //Instância novo Objeto Veiculos
+//            Veiculos objVeiculos = new Veiculos();
+//            objVeiculos.cadastroVeiculos();
+//            
+//        } else {
+//            System.out.println("*** Escolha um opção Válida ! ***");
+//        }
     }
 
     private static int menu() {
